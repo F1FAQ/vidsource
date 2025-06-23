@@ -10,12 +10,6 @@
   echo "-------------------------------------------------------------"
 fi
 
-sudo mkdir /boot/testcard
-echo
-echo "---------------------------"
-echo "----- Personalisation -----"
-echo "---------------------------"
-
 echo
 echo "Please enter your callsign and press enter (it can be changed later)"
 read CALL
@@ -32,36 +26,6 @@ echo "these can be changed by editing the files in /boot/testcard/"
 echo
 echo "The install will now continue without needing any user input"
 echo "and reboot when it is finished."
-
-# Update the package manager
-echo
-echo "------------------------------------"
-echo "----- Updating Package Manager -----"
-echo "------------------------------------"
-sudo dpkg --configure -a
-sudo apt-get update --allow-releaseinfo-change
-
-# Uninstall the apt-listchanges package to allow silent install of ca certificates (201704030)
-# http://unix.stackexchange.com/questions/124468/how-do-i-resolve-an-apparent-hanging-update-process
-sudo apt-get -y remove apt-listchanges
-
-# Upgrade the distribution
-echo
-echo "-----------------------------------"
-echo "----- Performing dist-upgrade -----"
-echo "-----------------------------------"
-sudo apt-get -y dist-upgrade
-
-
-# Install the packages that we need
-echo
-echo "-------------------------------"
-echo "----- Installing Packages -----"
-echo "-------------------------------"
-sudo apt-get -y install git
-sudo apt-get -y install cmake libusb-1.0-0-dev libx11-dev buffer libjpeg-dev indent
-sudo apt-get -y install ttf-dejavu-core bc usbmount libfftw3-dev wiringpi libvncserver-dev
-sudo apt-get -y install fbi netcat imagemagick
 
 echo
 echo "--------------------------------"
@@ -85,7 +49,7 @@ echo
 echo "------------------------------------------"
 echo "----- Downloading VidSource Software -----"
 echo "------------------------------------------"
-wget https://github.com/${GIT_SRC}/vidsource/archive/main.zip
+wget https://github.com/F1FAQ/vidsource/archive/main.zip
 
 # Unzip the VidSource software and copy to the Pi
 unzip -o main.zip
