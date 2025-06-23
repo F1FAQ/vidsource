@@ -12,6 +12,10 @@ sudo cp /home/pi/vidsource/tcdata6.txt /boot/testcard/tcdata6.txt
 sudo cp /home/pi/vidsource/tcdata7.txt /boot/testcard/tcdata7.txt
 sudo cp /home/pi/vidsource/tcdata8.txt /boot/testcard/tcdata8.txt
 sudo cp /home/pi/vidsource/tcdata9.txt /boot/testcard/tcdata9.txt
+sudo cp /home/pi/vidsource/tcdata10.txt /boot/testcard/tcdata10.txt
+sudo cp /home/pi/vidsource/tcdata11.txt /boot/testcard/tcdata11.txt
+sudo cp /home/pi/vidsource/tcdata12.txt /boot/testcard/tcdata12.txt
+sudo cp /home/pi/vidsource/tcdata13.txt /boot/testcard/tcdata13.txt
 
 sudo cp /home/pi/vidsource/11g720.jpg /boot/testcard/11g720.jpg
 sudo cp /home/pi/vidsource/75cb720.jpg /boot/testcard/75cb720.jpg
@@ -21,6 +25,10 @@ sudo cp /home/pi/vidsource/tcc720.jpg /boot/testcard/tcc720.jpg
 sudo cp /home/pi/vidsource/tcf640.jpg /boot/testcard/tcf640.jpg
 sudo cp /home/pi/vidsource/tcf720.jpg /boot/testcard/tcf720.jpg
 sudo cp /home/pi/vidsource/testcard640.jpg /boot/testcard/testcard640.jpg
+sudo cp /home/pi/vidsource/mire1.jpg /boot/testcard/mire1.jpg
+sudo cp /home/pi/vidsource/mire2.jpg /boot/testcard/mire2.jpg
+sudo cp /home/pi/vidsource/mire3.jpg /boot/testcard/mire3.jpg
+sudo cp /home/pi/vidsource/mire4.jpg /boot/testcard/mire4.jpg
 
 sudo cp /home/pi/vidsource/camtc23a.sh /boot/testcard/camtc23a.sh
 
