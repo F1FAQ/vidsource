@@ -49,7 +49,7 @@ chmod +x install.sh
 
 To load a version from your own GitHub repo (github.com/your_account/vidsource), cut, paste and amend the following lines:
 ```sh
-wget https://raw.githubusercontent.com/your_account/vidsource/main/install.sh
+wget https://raw.githubusercontent.com/F1FAQ/vidsource/main/install.sh
 chmod +x install.sh
 ./install.sh -u your_account
 ```
