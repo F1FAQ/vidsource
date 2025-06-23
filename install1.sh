@@ -4,32 +4,6 @@
 # Orignal design by Brian, G4EWJ
 # Packaged for release by Dave, G8GKQ
 
-whoami | grep -q pi
-if [ $? != 0 ]; then
-  echo "Install must be performed as user pi"
-  exit
-fi
-
-# Check which source needs to be loaded
-GIT_SRC="BritishAmateurTelevisionClub"
-GIT_SRC_FILE=".vidsource_gitsrc"
-
-if [ "$1" == "-d" ]; then
-  GIT_SRC="davecrump";
-  echo
-  echo "-------------------------------------------------------"
-  echo "----- Installing development version of VidSource -----"
-  echo "-------------------------------------------------------"
-elif [ "$1" == "-u" -a ! -z "$2" ]; then
-  GIT_SRC="$2"
-  echo
-  echo "WARNING: Installing ${GIT_SRC} development version, press enter to continue or 'q' to quit."
-  read -n1 -r -s key;
-  if [[ $key == q ]]; then
-    exit 1;
-  fi
-  echo "ok!";
-else
   echo
   echo "-------------------------------------------------------------"
   echo "----- Installing BATC Production Portsdown of VidSource -----"
@@ -150,12 +124,11 @@ sudo cp /home/pi/vidsource/pm5544-720.jpg /boot/testcard/pm5544-720.jpg
 sudo cp /home/pi/vidsource/tcc720.jpg /boot/testcard/tcc720.jpg
 sudo cp /home/pi/vidsource/tcf640.jpg /boot/testcard/tcf640.jpg
 sudo cp /home/pi/vidsource/tcf720.jpg /boot/testcard/tcf720.jpg
+sudo cp /home/pi/vidsource/testcard640.jpg /boot/testcard/testcard640.jpg
 sudo cp /home/pi/vidsource/mire1.jpg /boot/testcard/mire1.jpg
 sudo cp /home/pi/vidsource/mire2.jpg /boot/testcard/mire2.jpg
 sudo cp /home/pi/vidsource/mire3.jpg /boot/testcard/mire3.jpg
 sudo cp /home/pi/vidsource/mire4.jpg /boot/testcard/mire4.jpg
-sudo cp /home/pi/vidsource/testcard640.jpg /boot/testcard/testcard640.jpg
-
 
 sudo cp /home/pi/vidsource/camtc23a.sh /boot/testcard/camtc23a.sh
 
