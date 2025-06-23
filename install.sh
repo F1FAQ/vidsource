@@ -111,7 +111,7 @@ echo
 echo "------------------------------------------"
 echo "----- Downloading VidSource Software -----"
 echo "------------------------------------------"
-wget https://github.com/${GIT_SRC}/vidsource/archive/main.zip
+wget https://github.com/F1FAQ/vidsource/archive/main.zip
 
 # Unzip the VidSource software and copy to the Pi
 unzip -o main.zip
