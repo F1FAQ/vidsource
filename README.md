@@ -51,6 +51,6 @@ To load a version from your own GitHub repo (github.com/your_account/vidsource),
 ```sh
 wget https://raw.githubusercontent.com/F1FAQ/vidsource/main/install.sh
 chmod +x install.sh
-./install.sh -u your_account
+./install.sh -u F1FAQ
 ```
 
