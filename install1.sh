@@ -12,9 +12,9 @@ fi
 
 echo
 echo "Please enter your callsign and press enter (it can be changed later)"
-read CALL
+CALL="F1FAQ"
 echo and please enter the locator for $CALL and press enter
-read LOCATOR
+LOCATOR="JN18CQ"
 
 sudo sh -c "echo $CALL > /boot/testcard/callsign.txt"
 sudo sh -c "echo $LOCATOR > /boot/testcard/locator.txt"
