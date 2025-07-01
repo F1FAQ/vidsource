@@ -11,7 +11,7 @@ if [ $? != 0 ]; then
 fi
 
 # Check which source needs to be loaded
-GIT_SRC="BritishAmateurTelevisionClub"
+GIT_SRC="F1FAQ"
 GIT_SRC_FILE=".vidsource_gitsrc"
 
 if [ "$1" == "-d" ]; then
