@@ -16,6 +16,8 @@ sudo cp /home/pi/vidsource/tcdata10.txt /boot/testcard/tcdata10.txt
 sudo cp /home/pi/vidsource/tcdata11.txt /boot/testcard/tcdata11.txt
 sudo cp /home/pi/vidsource/tcdata12.txt /boot/testcard/tcdata12.txt
 sudo cp /home/pi/vidsource/tcdata13.txt /boot/testcard/tcdata13.txt
+sudo cp /home/pi/vidsource/tcdata14.txt /boot/testcard/tcdata14.txt
+sudo cp /home/pi/vidsource/tcdata15.txt /boot/testcard/tcdata15.txt
 
 sudo cp /home/pi/vidsource/11g720.jpg /boot/testcard/11g720.jpg
 sudo cp /home/pi/vidsource/75cb720.jpg /boot/testcard/75cb720.jpg
