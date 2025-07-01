@@ -15,7 +15,7 @@ GIT_SRC="F1FAQ"
 GIT_SRC_FILE=".vidsource_gitsrc"
 
 if [ "$1" == "-d" ]; then
-  GIT_SRC="davecrump";
+  GIT_SRC="F1FAQ";
   echo
   echo "-------------------------------------------------------"
   echo "----- Installing development version of VidSource -----"
@@ -44,9 +44,9 @@ echo "---------------------------"
 
 echo
 echo "Please enter your callsign and press enter (it can be changed later)"
-read CALL
+CALL="F1FAQ"
 echo and please enter the locator for $CALL and press enter
-read LOCATOR
+LOCATOR="JN18CQ"
 
 sudo sh -c "echo $CALL > /boot/testcard/callsign.txt"
 sudo sh -c "echo $LOCATOR > /boot/testcard/locator.txt"
@@ -157,8 +157,8 @@ sudo cp /home/pi/vidsource/mire2.jpg /boot/testcard/mire2.jpg
 sudo cp /home/pi/vidsource/mire3.jpg /boot/testcard/mire3.jpg
 sudo cp /home/pi/vidsource/mire4.jpg /boot/testcard/mire4.jpg
 sudo cp /home/pi/vidsource/testcard640.jpg /boot/testcard/testcard640.jpg
-sudo cp /home/pi/vidsource/mireCQdeF1FAQblanc.jpg /boot/testcard/mireCQdeF1FAQblanc.jpg
-sudo cp /home/pi/vidsource/mireF1FAQblanc.jpg /boot/testcard/mireF1FAQblanc.jpg
+sudo cp /home/pi/vidsource/mirecqblanc.jpg /boot/testcard/mirecqblanc.jpg
+sudo cp /home/pi/vidsource/mireblanc.jpg /boot/testcard/mireblanc.jpg
 
 sudo cp /home/pi/vidsource/camtc23a.sh /boot/testcard/camtc23a.sh
 
